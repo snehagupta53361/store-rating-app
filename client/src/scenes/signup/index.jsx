@@ -67,7 +67,7 @@ const Signup = () => {
     }
 
     try {
-      const data = await signup(fields).unwrap();
+      await signup(fields).unwrap();
       navigate("/dashboard");
     } catch (err) {
       setSubmitError(

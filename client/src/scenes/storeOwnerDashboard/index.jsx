@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -26,13 +25,7 @@ import { useGetDashboardQuery } from "../../store/api/dashboardApi.js";
 const StoreOwnerDashboard = () => {
   const theme = useTheme();
 
-  const {
-    data: storeData,
-    isLoading,
-    isFetching,
-    isError,
-    error,
-  } = useGetDashboardQuery();
+  const { data: storeData, isLoading, isError, error } = useGetDashboardQuery();
 
   const bg = theme.palette.background.alt;
 
