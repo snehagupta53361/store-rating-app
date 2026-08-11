@@ -4,7 +4,7 @@ import cors from "cors";
 import morgan from "morgan";
 import env from "./config/env.js";
 import { notFoundHandler, errorHandler } from "./middleware/errorMiddleware.js";
-import { connectDB, sequelize } from "./config/database_config.js";
+import { connectDB, sequelize } from "../src/models/index.js";
 import "./models/index.js";
 
 // import routes

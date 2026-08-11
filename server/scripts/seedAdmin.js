@@ -14,6 +14,9 @@ const seedAdmin = async () => {
   try {
     await sequelize.authenticate();
 
+    await sequelize.sync();
+    console.log("Database tables synchronized.");
+
     const existing = await User.findOne({ where: { email: ADMIN_EMAIL } });
     if (existing) {
       console.log(`Admin already exists: ${ADMIN_EMAIL}`);
