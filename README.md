@@ -607,5 +607,5 @@ client/.env
 Example:
 
 ```env
-REACT_API_URL=http://localhost:5000/api
+REACT_API_URL=http://localhost:8000/api
 ```
